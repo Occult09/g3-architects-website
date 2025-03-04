@@ -113,6 +113,48 @@ main {
     font-weight: 700;
 }
 
+/* features section style */
+.features {
+    margin-top: 130px;
+    display: flex;
+    gap: 100px;
+}
+
+.ten-years-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 140px;
+    left: -60px;
+}
+
+.ten-years-badge h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.ten-years-badge p {
+    font-size: 1.5rem;
+
+}
+
+.features .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-content .card {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
 /* facts section */
 .facts-card-container {
     display: flex;
@@ -155,6 +197,15 @@ main {
     width: 100px;
 }
 
+/* footer style */
+footer {
+    text-align: center;
+    background-color: #FF900E;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 10px 0px;
+}
+
 /* responsive media queries */
 /* mobile devices */
 @media screen and (max-width: 576px) {
@@ -165,12 +216,18 @@ main {
     nav,
     .teams-container,
     .facts-card-container,
+    .features,
     .sponsors-img-container {
         flex-direction: column;
     }
 
-    .sponsors-img-container {
-        align-items: center;
+    .features img {
+        width: 100%;
+    }
+
+    .ten-years-badge {
+        position: static;
+        width: 80%;
     }
 
     .teams-img-container {
@@ -186,6 +243,19 @@ main {
     .facts-card-container {
         gap: 20px;
     }
+
+    .facts {
+        text-align: center;
+    }
+
+    .sponsors-img-container {
+        align-items: center;
+    }
+
+    footer {
+        width: 350px;
+    }
+
 }
 
 /* tablet or medium devices */
@@ -193,11 +263,16 @@ main {
 
     nav,
     .teams-container,
+    .features,
     .sponsors-img-container {
         flex-direction: column;
     }
 
     header {
         padding: 30px;
+    }
+
+    .sponsors-img-container {
+        align-items: center;
     }
 }
